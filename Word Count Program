@@ -1,0 +1,17 @@
+WordCount ProgramS
+
+spark-shell
+
+val text = sc.textFile("/home/ketan/Music/Test")
+
+result1: Array[String] = Array(Hands on experience on AWS Architecture based on experience)
+
+val counts = text.flatMap(line => line.split(" "))
+result2: Array[String] = Array(Hands, on, experience, on, AWS, Architecture, based, on, experience)
+
+val mapf = counts.map(word => (word,1))
+result3: Array[(String, Int)] = Array((Hands,1), (on,1), (experience,1), (on,1), (AWS,1), (Architecture,1), (based,1), (on,1), (experience,1))
+
+val reducef = mapf.reduceByKey(_+_)
+result4: Array[(String, Int)] = Array((experience,2), (Hands,1), (AWS,1), (on,3), (based,1), (Architecture,1))
+
