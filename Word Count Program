@@ -15,3 +15,5 @@ result3: Array[(String, Int)] = Array((Hands,1), (on,1), (experience,1), (on,1),
 
 val reducef = mapf.reduceByKey(_+_)
 result4: Array[(String, Int)] = Array((experience,2), (Hands,1), (AWS,1), (on,3), (based,1), (Architecture,1))
+
+//after clone
