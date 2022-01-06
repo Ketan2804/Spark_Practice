@@ -1,0 +1,9 @@
+# DEV Jenkins related properties
+jenkins.server=http://cloudhub-toolsbackend:8080
+jenkins.server.username=cloudhub
+jenkins.server.password=cloudhub
+jenkins.job.path=job/cloudhub-job/build
+jenkins.crumb.path=/crumbIssuer/api/json
+jenkins.credentials.path=credentials/store/system/domain/_/createCredentials
+jenkins.credentials.api.body=<com.cloudbees.jenkins.plugins.awscredentials.AWSCredentialsImpl><scope>GLOBAL</scope><id>CREDENTIAL_ID</id><description>CREDENTIAL_DESCRIPTION</description><accessKey>CREDENTIAL_ACCESS_KEY</accessKey><secretKey>CREDENTIAL_SECRET_KEY</secretKey></com.cloudbees.jenkins.plugins.awscredentials.AWSCredentialsImpl>
+
