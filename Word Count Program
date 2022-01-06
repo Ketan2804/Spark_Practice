@@ -2,6 +2,7 @@ WordCount ProgramS
 
 spark-shell
 
+//Start
 val text = sc.textFile("/home/ketan/Music/Test")
 
 result1: Array[String] = Array(Hands on experience on AWS Architecture based on experience)
@@ -15,3 +16,4 @@ result3: Array[(String, Int)] = Array((Hands,1), (on,1), (experience,1), (on,1),
 val reducef = mapf.reduceByKey(_+_)
 result4: Array[(String, Int)] = Array((experience,2), (Hands,1), (AWS,1), (on,3), (based,1), (Architecture,1))
 
+//End
